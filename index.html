@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            LAB 1
-        </title>
-        <link rel="stylesheet" href="styles/style.css">
-        </head>
-    <body background="Background.jpg">
+
+<head>
+    <title>
+        LAB 1
+    </title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body background="Background.jpg">
     <!--Header tag to add text on top of the bag in the header section-->
-        <header>
-            <h1 align="center">
-                <font face="arial" size="10">
-                    Our Flowers 
-                </font>
-                <br> <br>
-            </h1>
-        </header>
-      
-        <h3 align="center">
-            <!-- to add spaces between the links &nbps was used-->
-             <!-- a href tag to create a linkage between different pages through a text as an hyper link-->
-        <a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#">ABOUT US</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#">SERVICES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </h3>
-    <!--to move the welcome text down and create a break between lines <br> break tag was used-->
-     <br><br> <br><br>
-      <!--H2 tag is used to make the ext stand out but no over shadow the main name of the website-->
-    <h2 align="center"> WELCOME!</h2>
-    <!--Paragraph tag to add text that can be represented on the page in the form of a paragraph-->
-    <p align="center"> 
-        There are different types of flower options availaible. From seasonal flowers to evergreen ones we have every variety og flowers present. <br>
-    You can order customizable gifts and flower bouquets anytime with discounts.
-    </p>
-<!--To create search bar-->
-<!-- this is a form tag-->
-    <form align="center">
+    <header>
+
+        <h1 align="center">
+            <font face="arial" size="10">
+                Our Flowers
+            </font>
+            <br>
+        </h1>
         <!--div tag is used to create a data entry box for users to search the required items-->
-        <div class="search">
-            <!--Input tag to enter the value-->
-            <input class-="Search-input" type="Search" placeholder="Search items">
-        </div>
-    </form> 
-<br><br><br>
-<p>
-    <!--H3 was used-->
+
+        <div>
+            <h3 align="center">
+                <!-- to add spaces between the links &nbps was used-->
+                <!-- a href tag to create a linkage between different pages through a text as an hyper link-->
+                <a
+                    href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">ABOUT
+                    US</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a
+                    href="#">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a
+                    href="#">SERVICES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </h3>
+    </header>
+    </div>
+    <!--to move the welcome text down and create a break between lines <br> break tag was used-->
+    <br>
+    <!--H2 tag is used to make the ext stand out but no over shadow the main name of the website-->
+    <!--id tag is used to apply css in css file with id="header-title" element -->
+    <h2 id="header-title">Welcome to Our Flower shop</h2>
+    <!--Paragraph tag to add text that can be represented on the page in the form of a paragraph-->
+    <p align="center">
+        There are different types of flower options availaible. From seasonal flowers to evergreen ones we have every
+        variety og flowers present. <br>
+        You can order customizable gifts and flower bouquets anytime with discounts.
+    </p>
+    <!--To create search bar-->
+    <!-- this is a form tag-->
+    <form align="center">
+        <!--Input tag to enter the value-->
+        <input class-="Search-input" type="Search" placeholder="Search items">
+
+    </form>
+    <br><br><br>
+    <p>
+        <!--H3 was used-->
     <h3 align="center">
         <!-- To create a list <li> tag was used -->
         <li>
@@ -53,113 +63,110 @@
             <label for="bouquets"></label>
             <a>Bouquets</a>
             <!--select tag so that users can select a desired option form the list-->
-        <select name="bouquets" id="bouquets">
-            <!--Option tag helps to enter option to be available in the drop down list-->
-            <option value="Roses">Roses</option>
-            <option value="Lilys">Llilys</option>
-            <option value="Tulips">Tulips</option>
-            <option value="Jasmine">Jasmine</option>
-            <option value="Lavender">Lavender</option>
-            <option value="More">More</option>
-        </select></li>
+            <select name="bouquets" id="bouquets">
+                <!--Option tag helps to enter option to be available in the drop down list-->
+                <option value="Roses">Roses</option>
+                <option value="Lilys">Llilys</option>
+                <option value="Tulips">Tulips</option>
+                <option value="Jasmine">Jasmine</option>
+                <option value="Lavender">Lavender</option>
+                <option value="More">More</option>
+            </select>
+        </li>
         <!--To create a break between two options-->
-            <br>
-            <!--Un ordered List for customizable gifts option-->
-            <li> 
-                <label for="Customizable items"></label>
-                <a >Customizable items </a>
-        <!--select tag so that users can select a desired option form the list-->
-                <select name="customizable items" id="customizable items ">
-                    <!--Option value tells the value which will be sent to the server when user selects an option -->
-                    <option value="Cups">Cups</option>
-                    <option value="Framess">Frames</option>
-                    <option value="Key chains">Key chains</option>
-                    <option value="Cup holders">Cup holders</option>
-                    <option value="More">More</option>
-                    </select>
-            </li>
-        </h3>
-     </p>
-     <br><br> 
-     <p> <h2 align="center">Our popular products</h2>
-<!-- to create a table-->
-        <!--Table is created under style tag-->    
-        <!--Single CSS property is used on table margin-->
-<style>
-    table {
-        margin: auto;
-    }
-</style>
+        <br>
+        <!--Un ordered List for customizable gifts option-->
+        <li>
+            <label for="Customizable items"></label>
+            <a>Customizable items </a>
+            <!--select tag so that users can select a desired option form the list-->
+            <select name="customizable items" id="customizable items ">
+                <!--Option value tells the value which will be sent to the server when user selects an option -->
+                <option value="Cups">Cups</option>
+                <option value="Framess">Frames</option>
+                <option value="Key chains">Key chains</option>
+                <option value="Cup holders">Cup holders</option>
+                <option value="More">More</option>
+            </select>
+        </li>
+    </h3>
+    </p>
+    <br><br>
+    <p>
+    <h2 align="center">Our popular products</h2>
+    <!-- to create a table-->
+    <!--Table is created under style tag-->
+    <!--Single CSS property is used on table margin-->
+    <style>
+        table {
+            margin: auto;
+        }
+    </style>
 
-<table border="1">
-    <!-- under table 8 coloums are created for different entries-->
-     <!-- tr is used for entering data in rows-->
-    <tr>
-        <!-- th is used as headings in the table -->
-        <th>Image</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Details</th>
-        <th>Image</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Details</th>
-    </tr>
-    <tr>
-        <!-- using img tag inside td helps to  add image in the table-->
-         <!-- td tag helps to add text inside the table as data-->
-        <td><img src="Flower 2.jpg" alt="Bouquets" style="width:200" height="250">
-           <!--alt tag displays the text written in case the image doesn't appear due to any technical error-->
-            <alt="Flower" width="250" 
-            height="100">
-        </td>
-        <td>Lavender bouquet</td>
-        <td>50$-55$ (DEPENDS ON SIZE)</td>
-        <td><a href="#">ORDER NOW</a></td>
-        <td><img src="cups 1.jpg" alt="Cups" style="width:200" height="250">
-            <alt="cup" width="250" 
-            height="100">
-        </td>
-        <td>Customized cups</td>
-        <td> 30$-40$ (DEPENDS ON DESIGN)</td>
-        <td><a href="#">ORDER NOW</a></td>
-    </tr>
-    <tr>
-        <td> <img src="Flower 1.jpg" alt="bouquets" style="width:200" height="250">
+    <table border="1">
+        <!-- under table 8 coloums are created for different entries-->
+        <!-- tr is used for entering data in rows-->
+        <tr>
+            <!-- th is used as headings in the table -->
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Details</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <!-- using img tag inside td helps to  add image in the table-->
+            <!-- td tag helps to add text inside the table as data-->
+            <td><img src="Flower 2.jpg" alt="Bouquets" style="width:200" height="250">
+                <!--alt tag displays the text written in case the image doesn't appear due to any technical error-->
+                <alt="Flower" width="250" height="100">
+            </td>
+            <td>Lavender bouquet</td>
+            <td>50$-55$ (DEPENDS ON SIZE)</td>
+            <td><a href="#">ORDER NOW</a></td>
+            <td><img src="cups 1.jpg" alt="Cups" style="width:200" height="250">
+                <alt="cup" width="250" height="100">
+            </td>
+            <td>Customized cups</td>
+            <td> 30$-40$ (DEPENDS ON DESIGN)</td>
+            <td><a href="#">ORDER NOW</a></td>
+        </tr>
+        <tr>
+            <td> <img src="Flower 1.jpg" alt="bouquets" style="width:200" height="250">
 
-            <alt="bouquet" width="100" 
-            height="100">
-        </td>
-        <td>Mix flowers bouquet</td>
-        <td>20$-30$ (DEPENDS ON SIZE)</td>
-        <td><a href="#">ORDER NOW</a></td>
-        <td><img src="Gift toy.jpg" alt="toy" style="width:200" height="250">
-            <alt="cup" width="250" 
-            height="100">
-        </td>
-        <td>Customized hamper</td>
-        <td> 30$-40$ (DEPENDS ON DESIGN)</td>
-        <td><a href="#">ORDER NOW</a></td>
-    </tr>
-    <tr>
-        <td> <img src="Flower 3.jpg" alt="bouquets" width="166" height="250">
+                <alt="bouquet" width="100" height="100">
+            </td>
+            <td>Mix flowers bouquet</td>
+            <td>20$-30$ (DEPENDS ON SIZE)</td>
+            <td><a href="#">ORDER NOW</a></td>
+            <td><img src="Gift toy.jpg" alt="toy" style="width:200" height="250">
+                <alt="cup" width="250" height="100">
+            </td>
+            <td>Customized hamper</td>
+            <td> 30$-40$ (DEPENDS ON DESIGN)</td>
+            <td><a href="#">ORDER NOW</a></td>
+        </tr>
+        <tr>
+            <td> <img src="Flower 3.jpg" alt="bouquets" width="166" height="250">
 
-            <alt="bouquet" width="100" 
-            height="100">
-        </td>
-        <td>White roses bouquet</td>
-        <td>20$-30$ (DEPENDS ON SIZE)</td>
-        <td><a href="#">ORDER NOW</a></td>
-        <td><img src="keychains.jpg" alt="keychains" style="width:200" height="250">
-            <alt="cup" width="250" 
-            height="100">
-        </td>
-        <td>Customized key chain</td>
-        <td> 30$-40$ for 5 (DEPENDS ON DESIGN)</td>
-        <td><a href="#">ORDER NOW</a></td>
+                <alt="bouquet" width="100" height="100">
+            </td>
+            <td>White roses bouquet</td>
+            <td>20$-30$ (DEPENDS ON SIZE)</td>
+            <td><a href="#">ORDER NOW</a></td>
+            <td><img src="keychains.jpg" alt="keychains" style="width:200" height="250">
+                <alt="cup" width="250" height="100">
+            </td>
+            <td>Customized key chain</td>
+            <td> 30$-40$ for 5 (DEPENDS ON DESIGN)</td>
+            <td><a href="#">ORDER NOW</a></td>
 
-    </tr>
-</table>
-</p> 
+        </tr>
+    </table>
+    </p>
 </body>
+
 </html>

@@ -1,3 +1,138 @@
-h1{ 
-    color: brown;
+/*General style*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  /*these are the background properties which places the background image fixed in center and with required dimensions*/ 
+    background: url('../Background.jpg') no-repeat center center fixed;
+    background-size : cover;
+    margin :10;
+    padding:10;
+    color :#333
 }
+
+/*Header styling*/
+header{
+    background : rgba(0, 0, 0, 0.7) ;
+    padding: 20px ;
+    text-align: center;
+    border-bottom: 3px solid #ff4081;
+}
+header h1{
+    color: #fff;
+    /*font size in rem means "root em" it is a unit of measurement for font size of the root element that is that of the html element*/
+    font-size: 3rem;
+}
+/*Navigation Bar styling*/ 
+/*styling of div tag in H3 for navigation bar*/ 
+div h3{
+    margin: 10px 0;
+}
+/*the anchor element within the div tag and a specific style is applied using div h3 a:hover */ 
+div h3 a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+/*hover means what style will the user the see when they hover around the link*/ 
+/*hovering on the anchor element within the div tag and a specific style is applied using div h3 a:hover */ 
+div h3 a :hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+/*id element styling*/
+#header-title{
+    color:beige;
+    font-size: 45px;
+    text-align: center;
+    background-color:#ff4081;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Search bar styling*/ 
+form input[type="search"]
+{
+    padding: 10px;
+    width: 250px;
+    border:2px solid #ddd;
+    border-radius: 5px;
+    font size:16px;
+}
+/*Dropdown list styling*/
+select{
+    padding: 8px;
+    font-size:16px;
+    border-radius: 5px;
+    border :1px solid #ddd;
+    /*It will change the cursor to a pointer when placed above the buttons as it is styled in a universal select tag*/
+    cursor: pointer;
+}
+/*list styling*/
+li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+/*Table styling*/
+table{
+    width: 80%;
+    margin: 30px auto;
+    border-collapse:collapse ;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+th{
+    background:#333 ;
+    color: white;
+}
+/*image styling*/ 
+img{
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+/*When pointer hovers above the image the image will start floating on the scale mentioned below*/
+img:hover{
+    transform:scale(1.05);
+}
+/*order buttom styling*/
+td a{
+    display: inline-block;
+    padding: 8px 15px;
+    color: #ddd;
+    background: #ff4081;
+    text-decoration: none;
+    border-radius: 5px;
+    transition:0.3s;
+}
+/*when we hover over the order now button it highlights in the colour specified below which is a bit darker shade to the original colour of the button*/
+td a:hover{
+    background:#e6005c;
+}
+/*Responsive deign for mobile devices design or small screen devices*/ 
+/*media query is a block of css property onlu if a certain condition is true. */ 
+/* It is a mobile responsive condition */ 
+@media (max-width:768px) {
+    header h1{
+        font-size: 2rem;
+    }
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar a{
+        margin: 10px 0;
+    }
+    #search-bar{
+        width: 78%;
+    }
+    .table-container{
+        width: 98%;
+        font-size: 0.10rem;
+    }
+}
+
