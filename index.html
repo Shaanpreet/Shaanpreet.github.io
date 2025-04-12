@@ -5,7 +5,9 @@
     <title>
         LAB 1
     </title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script/script.js"></script>
+   
 </head>
 
 <body background="Background.jpg">
@@ -19,7 +21,7 @@
             <br>
         </h1>
         <!--div tag is used to create a data entry box for users to search the required items-->
-
+        
         <div>
             <h3 align="center">
                 <!-- to add spaces between the links &nbps was used-->
@@ -39,18 +41,27 @@
     <br>
     <!--H2 tag is used to make the ext stand out but no over shadow the main name of the website-->
     <!--id tag is used to apply css in css file with id="header-title" element -->
-    <h2 id="header-title">Welcome to Our Flower shop</h2>
+    <h2 id="header-title" onclick="changeColor()">Welcome to Our Flower shop</h2>
     <!--Paragraph tag to add text that can be represented on the page in the form of a paragraph-->
     <p align="center">
         There are different types of flower options availaible. From seasonal flowers to evergreen ones we have every
         variety og flowers present. <br>
         You can order customizable gifts and flower bouquets anytime with discounts.
     </p>
-    <!--To create search bar-->
+
+
+    <!--NEW ADDITION FOR JAVASCRIPT-->
+    <!--To create an alert button-->
+    <button id="alertme" onclick="showMessage()">Verify</button>
+
+
+
+
+    <!--To create search  -->
     <!-- this is a form tag-->
     <form align="center">
         <!--Input tag to enter the value-->
-        <input class-="Search-input" type="Search" placeholder="Search items">
+        <input class="Search-input" type="Search" placeholder="Search items">
 
     </form>
     <br><br><br>
@@ -80,7 +91,7 @@
             <label for="Customizable items"></label>
             <a>Customizable items </a>
             <!--select tag so that users can select a desired option form the list-->
-            <select name="customizable items" id="customizable items ">
+            <select name="customizable items"id="customizable items ">
                 <!--Option value tells the value which will be sent to the server when user selects an option -->
                 <option value="Cups">Cups</option>
                 <option value="Framess">Frames</option>
@@ -91,9 +102,24 @@
         </li>
     </h3>
     </p>
+    <br> 
+ 
     <br><br>
     <p>
     <h2 align="center">Our popular products</h2>
+
+
+    <div >
+        <button id="buttonCounter" style="margin-left: 600px; width: 150px;">Click Here to Know More</button>
+        <p id="counter" onclick="count += 1">
+        </p>
+    </div>
+
+    <div id="container" style="margin-left: 665px;">SCROLL DOWN FOR CHECKOUT</div>
+</div>
+
+
+
     <!-- to create a table-->
     <!--Table is created under style tag-->
     <!--Single CSS property is used on table margin-->
@@ -167,6 +193,16 @@
         </tr>
     </table>
     </p>
+
+    <p> 
+        <button id="alertme" style="margin-left: 650px; width: 100px;" onclick="showMessage2()">CHECKOUT</button>
+
+    </p>
+
+    <button id="hoverButton" style="margin-left: 650px; width: 100px;" onmouseover="showMessage3()">Hover Me</button>
+
+
 </body>
+
 
 </html>
