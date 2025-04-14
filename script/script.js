@@ -1,15 +1,16 @@
+//Pop-up message alert 
 function showMessage() {
     alert("Welcome to Our Flowers");
 }
-
+//Colourchange of the header 
 function changeColor() {
     document.getElementById("header-title").style.backgroundColor = "orange";
 }
-
+//Pop up message alert 
 function showMessage2() {
     alert("Are you sure?");
 }
-
+//Hover button colour change 
 function showMessage3() {
     document.getElementById('hoverButton').style.backgroundColor = "teal";
 }
